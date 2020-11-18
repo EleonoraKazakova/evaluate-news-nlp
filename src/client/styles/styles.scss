@@ -1,0 +1,144 @@
+
+@media  (min-width: 280px) and (max-width: 800px){
+  .content {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 150px auto 100px;
+    grid-template-areas: 
+    'hd'
+    'mn'
+    'ft';
+    min-height: 100vh;
+    
+  }
+  .main {
+    grid-area: mn;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.308);
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .topic{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  font-size: 30px;
+  }
+
+  .textArticle {
+    color: aliceblue;
+    flex: 0 0 300px;
+  }
+}
+
+@media  (min-width: 800px) and (max-width: 8000px){
+  .content {
+    display: grid;
+    grid-template-columns: 20% auto 20%;
+    grid-template-rows: 100px auto 100px;
+    grid-template-areas: 
+    'hd hd hd'
+    'lf mn rt'
+    'ft ft ft';
+    min-height: 100vh;
+    
+  }
+
+  .textArticle {
+    color: aliceblue;
+    
+  }
+  .main {
+    grid-area: mn;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.308);
+    margin: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .topic{
+    text-align: center;
+    vertical-align: middle;
+    line-height: 40px; 
+    font-size: 40px;
+  }
+}
+ 
+.formText{
+  width: 90%;
+}
+
+.text {
+  color: aliceblue;
+}
+
+.textFooter{
+  padding-top: 20px;
+}
+
+body {
+  background-image: url('../photo/IMG_5675.JPG');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  margin: 0;
+}
+
+
+
+
+header {
+    
+  grid-area: hd;
+  text-align: center;
+}
+
+footer {
+  grid-area: ft;
+  text-align: center;
+  
+  background-color: rgba(0, 0, 0, 0.74);
+}
+
+.sentences{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 20px;
+  gap: 20px;
+}
+
+.submit{
+  background-color: rgb(1, 48, 24);
+  display: inline-block;;
+  cursor: pointer;
+  padding: 15px 55px;
+  margin: 4px 2px;
+}
+
+.input {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  display: flex;
+  
+}
+
+.results{
+  margin-top: 20px;
+}
+
+.textSpace{
+  margin-bottom: 10px;
+}
+
+.flex{
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+}
