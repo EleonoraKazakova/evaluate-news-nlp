@@ -1,3 +1,6 @@
+@use 'stylesContent';
+
+$font-stack: 'Noto Sans SC', sans-serif;
 
 @media  (min-width: 280px) and (max-width: 800px){
   .content {
@@ -9,8 +12,8 @@
     'mn'
     'ft';
     min-height: 100vh;
-    
   }
+
   .main {
     grid-area: mn;
     text-align: center;
@@ -21,16 +24,17 @@
 
   .topic{
     display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  font-size: 30px;
+    justify-content: center;
+    align-items: center;
+    height: 150px;
+    font-size: 30px;
   }
 
   .textArticle {
     color: aliceblue;
-    flex: 0 0 300px;
-    font-family: 'Noto Sans SC', sans-serif;
+    flex: 20 0 250px;
+    font-family: $font-stack;
+    font-size: 25px;
   }
 }
 
@@ -49,9 +53,11 @@
 
   .textArticle {
     color: aliceblue;
-    font-family: 'Noto Sans SC', sans-serif;
-    
+    font-family: $font-stack;
+    flex: 10 0 300px;
+    font-size: 30px;
   }
+
   .main {
     grid-area: mn;
     text-align: center;
@@ -69,83 +75,3 @@
   }
 }
  
-.formText{
-  width: 90%;
-}
-
-.text {
-  color: aliceblue;
-}
-
-.textFooter{
-  padding-top: 20px;
-}
-
-body {
-  background-image: url('../photo/IMG_5675.JPG');
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  margin: 0;
-}
-
-
-
-
-header {
-    
-  grid-area: hd;
-  text-align: center;
-}
-
-footer {
-  grid-area: ft;
-  text-align: center;
-  
-  background-color: rgba(0, 0, 0, 0.74);
-}
-
-.sentences{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin: 20px;
-  gap: 20px;
-}
-
-.submit{
-  background-color: rgb(1, 48, 24);
-  display: inline-block;;
-  cursor: pointer;
-  padding: 15px 55px;
-  margin: 4px 2px;
-}
-
-.input {
-  margin-top: 50px;
-  margin-bottom: 50px;
-  display: flex;
-  
-}
-
-.results{
-  margin-top: 20px;
-}
-
-.textSpace{
-  margin-bottom: 10px;
-}
-
-.flex{
-  display: flex;
-  align-content: center;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  height: 100%;
-}
-
-.error{
-  padding-bottom: 10px;
-  font: bold 18px Georgia;
-}
