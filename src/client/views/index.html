@@ -5,6 +5,9 @@
   <meta charset="UTF-8">
   <title>Eleonora Kazakova</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500&display=swap');
+  </style>  
 </head>
 
 <body>
@@ -31,14 +34,13 @@
             Input URL
           </div>
           <input id="url" type="text" placeholder="Input URL here">
-          <span id="error"></span>
         </div>
 
         <div class="sentences">
           <div class="text">Sentences:</div>
           <input id="number" type="number" value='5'>
         </div>
-
+        <span id="error" class="error" ></span>
         <div class="submit">
           <div class="text" id='submit'>
             Submit
@@ -60,8 +62,8 @@
       <div class="text textFooter"> Copyright 2020 </div>
     </footer>
   </div>
-  <script>
 
+  <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', () => {
         navigator.serviceWorker.register('/service-worker.js');

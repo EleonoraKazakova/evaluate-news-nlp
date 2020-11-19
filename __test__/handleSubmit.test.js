@@ -7,4 +7,4 @@ describe("Testing the submit functionality", () => {
       expect(data.summary).toEqual('dfg')
     })
   })
-});
+})

@@ -30,10 +30,11 @@
   .textArticle {
     color: aliceblue;
     flex: 0 0 300px;
+    font-family: 'Noto Sans SC', sans-serif;
   }
 }
 
-@media  (min-width: 800px) and (max-width: 8000px){
+@media  (min-width: 800px){
   .content {
     display: grid;
     grid-template-columns: 20% auto 20%;
@@ -48,6 +49,7 @@
 
   .textArticle {
     color: aliceblue;
+    font-family: 'Noto Sans SC', sans-serif;
     
   }
   .main {
@@ -141,4 +143,9 @@ footer {
   flex-direction: column;
   align-items: center;
   height: 100%;
+}
+
+.error{
+  padding-bottom: 10px;
+  font: bold 18px Georgia;
 }

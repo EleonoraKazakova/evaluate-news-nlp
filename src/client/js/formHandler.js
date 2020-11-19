@@ -13,9 +13,7 @@ const getData = async (endpoint, data) => {
   )
 
   try {
-    console.log(res)
     const result = await res.json()
-    console.log(result)
     return result
   }
   catch (error) {
@@ -23,15 +21,14 @@ const getData = async (endpoint, data) => {
   }
 }
 
-
 function handleSubmit() {
   const text = document.getElementById('text').value
   const url = document.getElementById('url').value
   const number = document.getElementById('number').value
   const validURL = validateURL(url)
-  if (!validURL) {
-    error.textContent = "Please enter a valid URL"
-    error.style.color = "red"
+  if (!validURL && !text) {
+    error.textContent = "Please enter a valid URL or text"
+    error.style.color = "yellow"
   } else {
     error.textContent = ""
     getData('/summarization', { number, text, url }).then(

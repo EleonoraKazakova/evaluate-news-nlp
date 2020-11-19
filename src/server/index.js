@@ -32,7 +32,6 @@ app.post('/summarization', async (req, res) => {
   const response = await axios.post(encodeURI(API + API_KEY + params), {})
 
   try {
-    console.log(response)
     const result = JSON.stringify(response.data.summary)
     res.send(result)
   }
