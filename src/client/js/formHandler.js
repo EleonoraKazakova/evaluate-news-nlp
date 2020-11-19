@@ -31,7 +31,7 @@ function handleSubmit() {
     error.style.color = "yellow"
   } else {
     error.textContent = ""
-    getData('/summarization', { number, text, url }).then(
+    getData('http://localhost:8080/summarization', { number, text, url }).then(
       function (result) {
         document.getElementById('results').innerHTML = result
       }
