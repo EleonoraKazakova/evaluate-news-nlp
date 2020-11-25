@@ -26,4 +26,6 @@ It connects project in production mode.
 **npm run build-dev**
 This command builds the app for development to the __dist__ folder.
 
+![Result](/Result/result.jpg)
+
 
